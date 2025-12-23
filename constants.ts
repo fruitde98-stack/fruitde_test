@@ -1,7 +1,7 @@
 import { Product, Post, Category } from './types';
 
-// Beanit Logo SVG based on user image
-export const BEANIT_LOGO_URL = `data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 500 200' style='background-color: transparent;'%3E%3Cstyle%3E.bean%7Bfill:none;stroke:%231a1a1a;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;%7D .face%7Bfill:none;stroke:%231a1a1a;stroke-width:5;stroke-linecap:round;%7D .eye%7Bfill:%231a1a1a;%7D .text%7Bfill:%23332822;font-family:%22Noto Sans KR%22, sans-serif;font-weight:bold;font-size:45px;letter-spacing:2px;%7D%3C/style%3E%3Cpath class='bean' d='M90,135 C50,135 20,105 20,75 C20,40 55,20 90,20 C125,20 150,50 150,85' /%3E%3Cpath class='face' d='M60,95 Q80,110 100,95' /%3E%3Ccircle class='eye' cx='65' cy='80' r='4' /%3E%3Ccircle class='eye' cx='95' cy='80' r='4' /%3E%3Cpath class='bean' d='M410,135 C450,135 480,105 480,75 C480,40 445,20 410,20 C375,20 350,50 350,85' /%3E%3Cpath class='face' d='M380,95 Q400,110 420,95' /%3E%3Ccircle class='eye' cx='385' cy='80' r='4' /%3E%3Ccircle class='eye' cx='415' cy='80' r='4' /%3E%3Ccircle class='bean' cx='250' cy='85' r='75' style='fill:white'/%3E%3Cpath class='face' d='M220,100 Q250,120 280,100' /%3E%3Ccircle class='eye' cx='230' cy='80' r='5' /%3E%3Ccircle class='eye' cx='270' cy='80' r='5' /%3E%3Cpath class='face' d='M240,35 Q250,20 260,35' /%3E%3Ctext x='80' y='180' class='text' text-anchor='middle'%3EBeanit%3C/text%3E%3Ctext x='380' y='180' class='text' text-anchor='middle'%3E비 닛%3C/text%3E%3C/svg%3E`;
+// Optimized Beanit Logo SVG for better browser compatibility
+export const BEANIT_LOGO_URL = `data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 500 200'%3E%3Cstyle%3E.b%7Bfill:none;stroke:%231a1a1a;stroke-width:8;stroke-linecap:round;stroke-linejoin:round%7D.f%7Bfill:none;stroke:%231a1a1a;stroke-width:5;stroke-linecap:round%7D.e%7Bfill:%231a1a1a%7D.t%7Bfill:%23332822;font-family:sans-serif;font-weight:bold;font-size:45px;letter-spacing:2px%7D%3C/style%3E%3Cpath class='b' d='M90 135c-40 0-70-30-70-60 0-35 35-55 70-55s60 30 60 65'/%3E%3Cpath class='f' d='M60 95q20 15 40 0'/%3E%3Ccircle class='e' cx='65' cy='80' r='4'/%3E%3Ccircle class='e' cx='95' cy='80' r='4'/%3E%3Cpath class='b' d='M410 135c40 0 70-30 70-60 0-35-35-55-70-55s-60 30-60 65'/%3E%3Cpath class='f' d='M380 95q20 15 40 0'/%3E%3Ccircle class='e' cx='385' cy='80' r='4'/%3E%3Ccircle class='e' cx='415' cy='80' r='4'/%3E%3Ccircle class='b' cx='250' cy='85' r='75' style='fill:%23fff'/%3E%3Cpath class='f' d='M220 100q30 20 60 0'/%3E%3Ccircle class='e' cx='230' cy='80' r='5'/%3E%3Ccircle class='e' cx='270' cy='80' r='5'/%3E%3Cpath class='f' d='M240 35q10-15 20 0'/%3E%3Ctext x='80' y='185' class='t' text-anchor='middle'%3EBeanit%3C/text%3E%3Ctext x='380' y='185' class='t' text-anchor='middle'%3E비 닛%3C/text%3E%3C/svg%3E`;
 
 export const CATEGORIES: Category[] = [
   { id: 'all', name: '전체 상품' },
@@ -28,7 +28,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     name: '프리미엄 컵과일 (L)',
     category: 'fruit-cup',
     price: 8500,
-    image: 'https://images.unsplash.com/photo-1595456428628-918999e2954a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1620916297397-a4a5402a3c6c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
     description: '풍성한 구성으로 든든하게 즐기는 한 컵의 비타민.',
     isFeatured: true,
   },
@@ -40,6 +40,15 @@ export const INITIAL_PRODUCTS: Product[] = [
     image: 'https://images.unsplash.com/photo-1623065422902-30a2d299bbe4?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
     description: '첨가물 없이 저온에서 천천히 말려 영양을 그대로 담았습니다.',
     isFeatured: true,
+  },
+  {
+    id: 'dried-chips-2',
+    name: '리얼 딸기 건조칩',
+    category: 'dried-fruit',
+    price: 5000,
+    image: 'https://images.unsplash.com/photo-1590089415225-401ed66a1800?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+    description: '상큼한 딸기의 맛과 향을 그대로 살린 바삭한 간식.',
+    isFeatured: false,
   },
   {
     id: 'milktea-low-1',

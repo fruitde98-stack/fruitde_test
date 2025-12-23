@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FRUITDE | 프룻디</title>
+    <title>FRUITDE | 프룻디 - 프리미엄 건강 디저트</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -56,9 +56,7 @@
       }
       h1, h2, h3, .font-serif {
         font-family: 'Playfair Display', serif;
-        font-family: 'Noto Sans KR', serif; 
       }
-      /* Hide scrollbar for clean carousel */
       .no-scrollbar::-webkit-scrollbar {
         display: none;
       }
@@ -82,5 +80,7 @@
 </head>
   <body>
     <div id="root"></div>
+    <!-- Explicitly import the entry point to prevent blank screen issues -->
+    <script type="module" src="./index.tsx"></script>
   </body>
 </html>
